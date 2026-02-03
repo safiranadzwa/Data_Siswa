@@ -13,7 +13,7 @@ function capitalizeName(name) {
     .join(" ");
 }
 
-fetch("Students_rows.json")
+fetch("Student_rows.json")
   .then(response => {
     if (!response.ok) {
       throw new Error("Gagal mengambil data");
@@ -42,5 +42,6 @@ fetch("Students_rows.json")
       </tr>
     `;
   });
+
 
 
